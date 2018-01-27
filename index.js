@@ -11,10 +11,8 @@ function nameToAttributes(arr) {
   })
 }
 
-function attributesToPhrase(arr) {
-  return arr.map(function(driverInfo) {
-    const driverName = driverInfo.name;
-    const driverHometown = driverInfo.hometown;
-    return `${driverName} is from ${driverHometown}`
-  })
+function attributesToPhrase(drivers) {
+  return drivers.map(function (driver) {
+    return `${driver.name} is from ${driver.hometown}`;
+  });
 }
